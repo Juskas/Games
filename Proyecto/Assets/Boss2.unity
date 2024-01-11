@@ -3227,6 +3227,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2144677490}
+        m_TargetAssemblyTypeName: PowerUps, Assembly-CSharp
+        m_MethodName: IncrementarVelocidad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1264782175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4267,6 +4279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 982058084}
+  playerMovement: {fileID: 982058077}
 --- !u!212 &3862868259549079884
 SpriteRenderer:
   m_ObjectHideFlags: 0

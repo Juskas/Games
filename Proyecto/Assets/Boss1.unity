@@ -2909,6 +2909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 982058084}
+  playerMovement: {fileID: 982058077}
 --- !u!1 &1091095259
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    [SerializeField] private PlayerHealth player; 
+    [SerializeField] private PlayerHealth player;
+    [SerializeField] private PlayerMovement playerMovement;
     public void IncrementarVida()
     {
         player.health += 50; // idea inicial +50,
@@ -16,13 +17,31 @@ public class PowerUps : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    public void IncrementarVelocidad()
+    {
+        // Incrementar la velocidad del jugador
+        playerMovement.runSpeed += 20f;
+
+        // Guardar el nuevo valor de velocidad en PlayerPrefs
+        PlayerPrefs.SetFloat("speed", playerMovement.runSpeed);
+
+        // Guardar los cambios
+        PlayerPrefs.Save();
+    }
+
     public void ConservarVida()
     {
         int saludActual = player.health;
-        Debug.Log("vida actual: " + saludActual);
+        //Debug.Log("vida actual: " + saludActual);
 
         // Guardar el valor actual en PlayerPrefs
         PlayerPrefs.SetInt("health", saludActual);
+        
+        float velocidadActual = playerMovement.runSpeed;
+        //Debug.Log("Velocidad actual: " + velocidadActual);
+
+        // Guardar el valor actual de velocidad en PlayerPrefs
+        PlayerPrefs.SetFloat("speed", velocidadActual);
 
         // Guardar los cambios
         PlayerPrefs.Save();
@@ -31,8 +50,11 @@ public class PowerUps : MonoBehaviour
     {
         player.health = 100; // idea inicial +50,
         
-        // Guardar el nuevo valor en PlayerPrefs
+        playerMovement.runSpeed = 40f;
+
+        // Guardar los nuevos valores en PlayerPrefs
         PlayerPrefs.SetInt("health", player.health);
+        PlayerPrefs.SetFloat("speed", playerMovement.runSpeed);
 
         // Guardar los cambios
         PlayerPrefs.Save();
