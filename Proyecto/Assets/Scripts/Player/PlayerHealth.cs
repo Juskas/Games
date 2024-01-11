@@ -10,6 +10,15 @@ namespace Player
 		public int health = 100;
 
 		public GameObject deathEffect;
+		
+		void Start()
+		{
+			// Obtener el valor almacenado en PlayerPrefs
+			int saludGuardada = PlayerPrefs.GetInt("health", 100);
+
+			// Asignar el valor a la salud del jugador
+			health = saludGuardada;
+		}
 
 		public void TakeDamage(int damage)
 		{
