@@ -13,11 +13,7 @@ namespace Player
 		
 		void Start()
 		{
-			// Obtener el valor almacenado en PlayerPrefs
-			int saludGuardada = PlayerPrefs.GetInt("health", 100);
-
-			// Asignar el valor a la salud del jugador
-			health = saludGuardada;
+			ConservarVida();
 		}
 
 		public void TakeDamage(int damage)
@@ -61,6 +57,14 @@ namespace Player
 
 				yield return new WaitForSeconds(.1f);
 			}
+		}
+		private void ConservarVida()
+		{
+			// Obtener el valor almacenado en PlayerPrefs
+			int saludGuardada = PlayerPrefs.GetInt("health", -1);
+
+			// Usar el valor almacenado o el valor predeterminado
+			health = (saludGuardada != -1) ? saludGuardada : health;
 		}
 
 	}

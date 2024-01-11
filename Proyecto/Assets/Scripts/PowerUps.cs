@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using Player;
 using UnityEngine;
 
@@ -17,6 +16,17 @@ public class PowerUps : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    public void ConservarVida()
+    {
+        int saludActual = player.health;
+        Debug.Log("vida actual: " + saludActual);
+
+        // Guardar el valor actual en PlayerPrefs
+        PlayerPrefs.SetInt("health", saludActual);
+
+        // Guardar los cambios
+        PlayerPrefs.Save();
+    }
     public void ResetearStats()
     {
         player.health = 100; // idea inicial +50,
