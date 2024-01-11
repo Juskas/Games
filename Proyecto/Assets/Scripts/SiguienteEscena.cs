@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CambiarEscena : MonoBehaviour
+public class SiguienteEscena : MonoBehaviour
 {
     public string nombreDeLaEscena;
     public GameObject botonEscena;
