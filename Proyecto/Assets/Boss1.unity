@@ -484,7 +484,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1074788144}
         m_TargetAssemblyTypeName: PowerUps, Assembly-CSharp
-        m_MethodName: ConservarVida
+        m_MethodName: ConservarStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2641,6 +2641,7 @@ MonoBehaviour:
   firePoint: {fileID: 831852625}
   bulletPrefab: {fileID: 1539632861300792, guid: 96ae8f9dd8fd89941bc4d858375f035b,
     type: 3}
+  damageAdicional: 0
 --- !u!114 &982058077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,6 +2911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 982058084}
   playerMovement: {fileID: 982058077}
+  playerAtaque: {fileID: 982058075}
 --- !u!1 &1091095259
 GameObject:
   m_ObjectHideFlags: 0
