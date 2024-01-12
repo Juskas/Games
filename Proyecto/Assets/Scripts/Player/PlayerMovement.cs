@@ -7,7 +7,7 @@ namespace Player
 		public CharacterController2D controller;
 		public Animator animator;
 
-		public float runSpeed = 40f;
+		public float runSpeed = 30f;
 
 		float horizontalMove = 0f;
 		bool jump = false;

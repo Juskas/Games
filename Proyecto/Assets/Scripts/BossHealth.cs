@@ -57,8 +57,9 @@ public class BossHealth : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
-		botonEscena.SetActive(true);
+		//botonEscena.SetActive(true);
 		
+		EnemigosConteo.instance.EnemyDied();
 	}
 
 }
