@@ -1,24 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class TransicionDialogos : MonoBehaviour
 {
-    public Animator bossAnimator;
-    private BossRun bossRunScript;
+    public MonoBehaviour playerMovement;
+    public MonoBehaviour playerWeapon;
 
-    private void Start()
+    void Start()
     {
-        // Obtén el script BossRun asociado al Animator
-        bossRunScript = bossAnimator.GetComponent<BossRun>();
+        Invoke("Desactivar", 1f);
     }
 
-    public void OnButtonPress()
+    void Desactivar()
     {
-        if (bossRunScript != null)
+        if (playerMovement != null)
         {
-            // Llama al método BossRunUpdate en la instancia de BossRun
-            bossRunScript.BossRunUpdate();
+            playerMovement.enabled = false;
+        }
+        if (playerWeapon != null)
+        {
+            playerWeapon.enabled = false;
         }
     }
 }
