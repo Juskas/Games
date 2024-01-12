@@ -2996,6 +2996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 220
+  enfado: 0
   botonEscena: {fileID: 697502311}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
@@ -4770,7 +4771,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 515dd90b3eb103e4294e23f2493e4ba1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6465,6 +6466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
+  enfado: 0
   botonEscena: {fileID: 697502311}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
@@ -9393,6 +9395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 220
+  enfado: 0
   botonEscena: {fileID: 697502311}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
@@ -13523,6 +13526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 220
+  enfado: 0
   botonEscena: {fileID: 697502311}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
@@ -14719,6 +14723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 220
+  enfado: 0
   botonEscena: {fileID: 697502311}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
@@ -19429,6 +19434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
+  enfado: 0
   botonEscena: {fileID: 697502311}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}

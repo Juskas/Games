@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossRun : MonoBehaviour
 {
-    public float speed = 2.5f;
+    public float speed = 4f;
     public float attackRange = 3f;
 
     private Transform player;

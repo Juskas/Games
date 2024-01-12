@@ -8533,7 +8533,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7ba4a3639410428418dfb43de08d3edf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9498,6 +9498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 220
+  enfado: 0
   botonEscena: {fileID: 1681828143}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
