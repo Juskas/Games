@@ -8,7 +8,8 @@ public class BossHealth : MonoBehaviour
 
 	public int health = 500;
 	public int enfado = 0;
-    public GameObject botonEscena;
+	
+    //public GameObject botonEscena;
     
     public GameObject deathEffect;
 

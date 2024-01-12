@@ -64,7 +64,7 @@ public class PowerUps : MonoBehaviour
     {
         player.health = 100; // idea inicial +50,
         
-        playerMovement.runSpeed = 40f;
+        playerMovement.runSpeed = 30f;
 
         playerAtaque.damageAdicional = 0;
 
