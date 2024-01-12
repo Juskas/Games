@@ -30,15 +30,15 @@ namespace Player
 				jump = true;
 				animator.SetBool("IsJumping", true);
 			}
-
+			
 			if (Input.GetButtonDown("Crouch"))
 			{
 				crouch = true;
-			} else if (Input.GetButtonUp("Crouch"))
+			} 
+			else if (Input.GetButtonUp("Crouch"))
 			{
 				crouch = false;
 			}
-
 		}
 
 		public void OnLanding ()
@@ -60,10 +60,7 @@ namespace Player
 	
 		private void ConservarVelocidad()
 		{
-			// Obtener el valor almacenado en PlayerPrefs
 			float velocidadGuardada = PlayerPrefs.GetFloat("speed", -1f);
-
-			// Usar el valor almacenado o el valor predeterminado
 			runSpeed = (velocidadGuardada != -1f) ? velocidadGuardada : runSpeed;
 		}
 	}
