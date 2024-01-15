@@ -5944,7 +5944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 982058083}
   smoothSpeed: 1.5
-  offset: {x: 3.5, y: 2.5, z: -10}
+  offset: {x: 0, y: 2.5, z: -10}
 --- !u!1 &1146011924
 GameObject:
   m_ObjectHideFlags: 0
@@ -9536,7 +9536,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3000
   enfado: 0
-  botonEscena: {fileID: 481288037}
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
   isInvulnerable: 0
